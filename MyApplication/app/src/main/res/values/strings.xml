@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">TGUIDE</string>
     <string name="welcome_to_tguide">Welcome to TGUIDE</string>
-    <string name="login">Login</string>
+    <string name="login">LOGIN</string>
     <string name="continue_without_login">Continue without Login</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="please_login">Please Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_yet_signup">Don\'t have an account yet? <b><u>SignUp</u></b></string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="dashboard_admin">Dashboard Admin</string>
 </resources>

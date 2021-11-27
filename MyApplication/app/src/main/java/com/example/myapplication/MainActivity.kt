@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -22,11 +23,13 @@ class MainActivity : AppCompatActivity() {
         //handle click login
         binding.loginBtn.setOnClickListener{
             // :TODO
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         //handle click, skip and continue to main screen
         binding.skipBtn.setOnClickListener {
             // :TODO
+            startActivity(Intent(this, DashboardUserActivity::class.java))
         }
     }
 }
