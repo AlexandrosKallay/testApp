@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "95937000817",
+    "project_id": "kotlintguide",
+    "storage_bucket": "kotlintguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95937000817:android:52e05da73cb9cfd2b672d0",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95937000817-608p52cjf94mcelrc1iqe2rnfrr2dsr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsiDJQi7L-pQxdn0dUHpwOqWyFUcwTKPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95937000817-608p52cjf94mcelrc1iqe2rnfrr2dsr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
