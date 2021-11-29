@@ -33,6 +33,7 @@ class SplashActivity : AppCompatActivity() {
         if(firebaseUser == null) {
             //user not logged in, goto main screen
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
         else{
             //user logged in, check user type, same as done in login screen
