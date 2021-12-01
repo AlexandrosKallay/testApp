@@ -3,11 +3,24 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.myapplication.databinding.ActivityDashboardUserBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
 
 class DashboardUserActivity : AppCompatActivity() {
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
 
     //view binding
     private lateinit var binding: ActivityDashboardUserBinding
@@ -31,6 +44,8 @@ class DashboardUserActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
+
+
     }
 
     private fun checkUser() {
@@ -47,4 +62,6 @@ class DashboardUserActivity : AppCompatActivity() {
             binding.subTitleTv.text = email
         }
     }
+
+
 }

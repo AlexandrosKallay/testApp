@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "95937000817",
+    "firebase_url": "https://kotlintguide-default-rtdb.europe-west1.firebasedatabase.app/",
     "project_id": "kotlintguide",
     "storage_bucket": "kotlintguide.appspot.com"
   },

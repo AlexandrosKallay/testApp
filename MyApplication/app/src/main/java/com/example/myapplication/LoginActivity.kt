@@ -29,6 +29,8 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
 
@@ -110,7 +112,7 @@ class LoginActivity : AppCompatActivity() {
 
         val firebaseUser = firebaseAuth.currentUser!!
 
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        val ref = FirebaseDatabase.getInstance("https://kotlintguide-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
         ref.child(firebaseUser.uid)
             .addListenerForSingleValueEvent(object : ValueEventListener{
 

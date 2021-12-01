@@ -134,7 +134,7 @@ class RegisterActivity : AppCompatActivity() {
         hashMap["timestamp"] = timestamp
 
         //set date to db
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        val ref = FirebaseDatabase.getInstance("https://kotlintguide-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
         ref.child(uid!!)
             .setValue(hashMap)
             .addOnSuccessListener {
