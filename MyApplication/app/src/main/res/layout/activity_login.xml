@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.MyApplication"
     tools:context=".LoginActivity">
 
 
@@ -31,6 +32,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/please_login"
             android:textColor="@color/white"
+            android:theme="@style/Theme.MyApplication"
             android:fontFamily="sans-serif-condensed"
             android:textSize="28sp"/>
 
@@ -65,7 +67,7 @@
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"/>
+                    android:textColorHint="@color/gray"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--Password-->
@@ -89,7 +91,7 @@
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"/>
+                    android:textColorHint="@color/gray"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--Forgot Password-->
@@ -102,7 +104,7 @@
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
                 android:text="@string/forgot_password"
-                android:textColor="@color/gray02"
+                android:textColor="@color/DimGray"
                 android:textStyle="bold"/>
 
             <!--Login Button-->

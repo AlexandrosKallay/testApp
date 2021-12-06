@@ -11,6 +11,7 @@
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:theme="@style/Theme.MyApplication"
         android:background="@drawable/shape_toolbar01">
 
         <ImageButton
@@ -40,6 +41,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/create_new_account"
             android:textColor="@color/white"
+            android:theme="@style/Theme.MyApplication"
             android:fontFamily="sans-serif-condensed"
             android:textSize="28sp"/>
 
@@ -74,7 +76,7 @@
                     android:inputType="textPersonName|textCapWords"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"
+                    android:textColorHint="@color/gray"
                     android:importantForAutofill="no" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -99,7 +101,7 @@
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"
+                    android:textColorHint="@color/gray"
                     android:importantForAutofill="no" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -126,7 +128,7 @@
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"
+                    android:textColorHint="@color/gray"
                     android:importantForAutofill="no" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -152,7 +154,7 @@
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray01"
+                    android:textColorHint="@color/gray"
                     android:importantForAutofill="no" />
             </com.google.android.material.textfield.TextInputLayout>
 

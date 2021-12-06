@@ -2,6 +2,7 @@
   <dictionary name="akall">
     <words>
       <w>edittext</w>
+      <w>findviewbyid</w>
       <w>signup</w>
     </words>
   </dictionary>

@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.app.ProgressDialog
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,14 +27,30 @@ class DashboardAdminActivity : AppCompatActivity() {
 
         //handle click, logout
         binding.logoutBtn.setOnClickListener {
-            firebaseAuth.signOut()
-            checkUser()
+            showPopup();
         }
 
         //handle click, start add category page
         binding.addCategoryBtn.setOnClickListener {
             startActivity(Intent(this, CategoryAddActivity::class.java))
         }
+    }
+
+    private fun showPopup() {
+        val alert: android.app.AlertDialog.Builder = android.app.AlertDialog.Builder(this@DashboardAdminActivity)
+        alert.setMessage("Are you sure you want to Logout?")
+                .setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, which ->
+                    logout() // Last step. Logout function
+                }).setNegativeButton("Cancel", null)
+
+        val alert1: android.app.AlertDialog? = alert.create()
+        alert1?.show()
+    }
+
+    private fun logout() {
+        firebaseAuth.signOut()
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 
     private fun checkUser() {

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:theme="@style/Theme.MyApplication"
     tools:context=".MainActivity">
 
     <ImageView
@@ -24,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="@string/welcome_to_tguide"
-        android:textColor="@color/black"
+        android:theme="@style/Theme.MyApplication"
         android:textSize="16sp"/>
 
 
@@ -45,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/continue_without_login"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/greenPrimary"
         android:background="@drawable/shape_button02"/>
 
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.MyApplication"
     tools:context=".CategoryAddActivity">
 
     <!--Toolbar-->
@@ -66,7 +67,7 @@
             android:inputType="textPersonName|textCapSentences"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray01"/>
+            android:textColorHint="@color/gray"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
