@@ -7,7 +7,6 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.myapplication.Fragments.*
@@ -43,6 +42,7 @@ class DashboardUserActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         setContentView(view)
         setSupportActionBar(binding.userToolbar.toolBar);
 
+
         val actionBar = supportActionBar
         actionBar?.title = "Navigation Drawer"
 
@@ -75,6 +75,10 @@ class DashboardUserActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         checkUser()
 
 
+    }
+
+    fun setActionBarTitle(title: String?) {
+        supportActionBar!!.title = title
     }
 
     private fun showPopup() {
@@ -165,7 +169,7 @@ class DashboardUserActivity : AppCompatActivity(), NavigationView.OnNavigationIt
 
             R.id.logoutBtn -> {
                 //handle click, logout with alert dialog
-                    showPopup();
+                showPopup();
 
             }
 
